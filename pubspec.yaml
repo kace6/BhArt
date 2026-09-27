@@ -1,0 +1,65 @@
+name: bhart
+description: "BhArt - connecting rural artisans with the world."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.3
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # Backend / Auth
+  supabase_flutter: ^2.6.0
+
+  # Routing
+  go_router: ^14.2.0
+
+  # State management
+  flutter_riverpod: ^2.5.1
+
+  # Camera / gallery
+  image_picker: ^1.1.2
+
+  # Audio recording (handles the mic permission prompt itself)
+  record: ^7.1.1
+  path_provider: ^2.1.4
+
+  # Networking (Groq / Gemini / remove.bg calls)
+  http: ^1.2.2
+
+  # Charts (replaces recharts)
+  fl_chart: ^0.69.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.3
+  flutter_native_splash: ^2.4.8
+
+# dart run flutter_launcher_icons
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/app_icon.png"
+  remove_alpha_ios: true
+  adaptive_icon_background: "#BF5B3D"
+  adaptive_icon_foreground: "assets/icon/app_icon_foreground.png"
+  adaptive_icon_monochrome: "assets/icon/app_icon_monochrome.png"
+
+# dart run flutter_native_splash:create
+flutter_native_splash:
+  color: "#BF5B3D"
+  image: assets/icon/splash_icon.png
+  android_12:
+    color: "#BF5B3D"
+    image: assets/icon/splash_icon.png
+
+flutter:
+  uses-material-design: true
